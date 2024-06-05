@@ -168,4 +168,10 @@ section .container {
         max-width: 768px;
         width: 100%;
     }
+
+    /* elemetos de classes: filhos diretos */
+    .container > img {
+        height: 384px;
+
+    }
 }
