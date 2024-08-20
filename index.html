@@ -34,13 +34,13 @@
         </div>
     </header>
     <main>
-        <!-- == secoes: about, contact 
+        <div class="container">
+            <!-- == secoes: about, contact 
             1 secao: about -->
-        <section id="about">
-            <div class="container">
+            <section id="about">
                 <!--adicionando a imagem: sobre-->
                 <img class="store-front" src="./imagens/loja.jpg" alt="Fachada da loja Games Shop">
-                <div>
+                <div class="about__sobre">
                     <h2>Sobre a loja</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eaque error quas animi officiis, provident neque ut iste quisquam temporibus veniam enim facilis quo illo ipsam fuga eveniet repellat? Voluptatem.
@@ -55,17 +55,15 @@
                         <li><img src="./imagens/playstation.png" alt="Playstation"></li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <!-- 2 secao: contact -->
-        <section id="contact">
-            <div class="container">
+            </section>
+            <!-- 2 secao: contact -->
+            <section id="contact">
                 <!--titulo principal-->
                 <h2>Contato</h2>
                 <div class="contact-methods">
                     <!--== subsecoes 
                         1: fale conosco -->
-                    <div>
+                    <div >
                         <h3>Fale conosco</h3>
                         <!--formulario p/ passar o contato-->
                         <form action="">
@@ -79,39 +77,41 @@
                         </form>
                     </div>
                     <!-- 2: nos acompanhe -->
-                    <div>
-                        <h3>Nos acompanhe</h3>
-                        <!-- lista nao ordenada: logos-> instagram, facebook, youtube -->
-                        <ul class="social-links">
-                            <li>
-                                <a href="#instagram" title="Siga-nos no Instagram">
-                                    <img id="instagram" src="./imagens/instagram.png" alt="Logo do Instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#facebook" title="Siga-nos no Facebook">
-                                    <img id="facebook" src="./imagens/facebook.png" alt="Logo do Facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#youtube" title="Visite nosso canal no YouTube">
-                                    <img id="youtube" src="./imagens/youtube.png" alt="Logo do YouTube">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 3: venha ate nos -->
-                    <div>
-                        <h3>Venha até nós</h3>
-                        <p>Rua JavaScript n° 124, Vila HTML - São Paulo - SP</p>
+                    <div class="contact-methods__infos">
+                        <div>
+                            <h3>Nos acompanhe</h3>
+                            <!-- lista nao ordenada: logos-> instagram, facebook, youtube -->
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#instagram" title="Siga-nos no Instagram">
+                                        <img id="instagram" src="./imagens/instagram.png" alt="Logo do Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#facebook" title="Siga-nos no Facebook">
+                                        <img id="facebook" src="./imagens/facebook.png" alt="Logo do Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#youtube" title="Visite nosso canal no YouTube">
+                                        <img id="youtube" src="./imagens/youtube.png" alt="Logo do YouTube">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 3: venha ate nos -->
+                        <div>
+                            <h3>Venha até nós</h3>
+                            <p>Rua JavaScript n° 124, Vila HTML - São Paulo - SP</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
-        <!--exibe direitos autorais-->
         <div class="container">
+            <!--exibe direitos autorais-->
             <p>&copy; Games Shop - Todos os direitos reservados - 2024</p>
         </div>
     </footer>

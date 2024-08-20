@@ -6,6 +6,19 @@
 }
 
 /* == elementos: pais */
+body{
+    display: flex;
+    flex-direction: column;
+    /* tamanho */
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    /* forca o main a ocupar o espaco restante do meio da tela */
+    flex-grow: 1;
+}
+
 header, footer {
     padding: 16px 0;
     background-color: #182C61;
@@ -13,7 +26,14 @@ header, footer {
 }
 
 section {
+    /* define um display p/ exibicao ao lado */
+    display: flex;
+    flex-wrap: wrap;
+    /* tamanho da sessao */
+    width: 100%;
+    /* margens */
     padding: 24px 0;
+    /* cores */
     color: #182C61;
 }
 
@@ -33,6 +53,14 @@ header, button, section h2, section h3 {
 }
 
 /* == elementos: nivel 1 */
+section > img{
+    width: calc(50% - 24px);
+}
+
+section > h2{
+    width: 100%;
+}
+
 section h3 {
     margin-bottom: 16px;
 }
@@ -84,9 +112,13 @@ header nav li a {
 
 /*classes: raiz*/
 .container {
-    max-width: 1280px;
+    max-width: 1366px;
     width: 100%;
     margin: 0 auto;
+}
+
+.about__sobre{
+    width:  calc(50% - 24px);
 }
 
 .store-front {
@@ -97,22 +129,23 @@ header nav li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* tamanho */
+    width: 100%;
 }
 
-/*fontes*/
-.bungee-regular {
-    font-family: "Bungee", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.contact-methods__infos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* tamanho */
+    width: 50%;
+}
 
 /*classes: elementos pais*/
+.about__sobre ul{
+    margin-top: 32px;
+}
+
 .brands-list img {
     height: 24px;
 }
@@ -153,25 +186,38 @@ section .container {
 }
 
 /*estilos p/ telas menores*/
-@media screen and (max-width: 768px) {
-    /*resete da pagina*/
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+@media (min-width: 768px) and (max-width: 1023px){
+    /* classes */
+    .container{
+        max-width: 700px;
     }
+}
 
+@media (max-width: 767px) {
     /*classes: raiz*/
     .container {
         flex-direction: column;
-        margin: 0 auto;
-        max-width: 768px;
     }
 
-    /* elemetos de classes: filhos diretos */
-    .container > img {
-        height: 384px;
-        width: 700px;
-
+    section > img{
+        width: 100%;
     }
+
+    .about__sobre{
+        width: 100vw;
+        margin: 16px;
+    }
+
+    /* classes elementos */
+    .contact-methods__infos div{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* ids */
+    #contact{
+        margin: 16px;
+    }
+
+    
 }
